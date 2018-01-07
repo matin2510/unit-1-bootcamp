@@ -31,6 +31,14 @@ public class Person {
   }
 
   public void setName(String name) {
+
     this.name = name;
   }
+   public void isFromLondon(Person person){
+     if (person.getName() != null) {
+       person.setCity("London");
+     } else {
+       name="N/A";
+     }
+   }
 }
